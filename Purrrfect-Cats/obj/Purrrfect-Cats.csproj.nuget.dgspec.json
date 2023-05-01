@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\Purrrfect Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj": {}
+    "C:\\Users\\LaunchCode\\Documents\\PURRRFECTCATS\\Purrrfect-Cats\\Purrrfect-Cats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\Purrrfect Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj": {
+    "C:\\Users\\LaunchCode\\Documents\\PURRRFECTCATS\\Purrrfect-Cats\\Purrrfect-Cats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\Purrrfect Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
+        "projectUniqueName": "C:\\Users\\LaunchCode\\Documents\\PURRRFECTCATS\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
         "projectName": "Purrrfect-Cats",
-        "projectPath": "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\Purrrfect Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
-        "packagesPath": "C:\\Users\\Iltani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\Purrrfect Cats\\Purrrfect-Cats\\obj\\",
+        "projectPath": "C:\\Users\\LaunchCode\\Documents\\PURRRFECTCATS\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
+        "packagesPath": "C:\\Users\\LaunchCode\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LaunchCode\\Documents\\PURRRFECTCATS\\Purrrfect-Cats\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Iltani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LaunchCode\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -52,6 +52,16 @@
               "target": "Package",
               "version": "[6.0.13, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.13, )"
@@ -59,6 +69,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
