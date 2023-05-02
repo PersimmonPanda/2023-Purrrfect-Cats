@@ -7,7 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+//var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+var connectionString = "server=localhost;user=catfinder2023;password=catfinder2023;database=catfinder";
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
