@@ -2459,11 +2459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\Purrrfect Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
+      "projectUniqueName": "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
       "projectName": "Purrrfect-Cats",
-      "projectPath": "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\Purrrfect Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
+      "projectPath": "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
       "packagesPath": "C:\\Users\\Iltani\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\Purrrfect Cats\\Purrrfect-Cats\\obj\\",
+      "outputPath": "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\2023-Purrrfect-Cats\\Purrrfect-Cats\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Iltani\\AppData\\Roaming\\NuGet\\NuGet.Config",
