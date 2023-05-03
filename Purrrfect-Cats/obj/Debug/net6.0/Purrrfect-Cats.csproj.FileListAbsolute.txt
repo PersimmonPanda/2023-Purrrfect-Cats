@@ -150,3 +150,4 @@ C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\ref
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\Purrrfect-Cats.pdb
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\Purrrfect-Cats.genruntimeconfig.cache
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\ref\Purrrfect-Cats.dll
+C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Newtonsoft.Json.dll

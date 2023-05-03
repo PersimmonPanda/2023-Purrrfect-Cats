@@ -1,0 +1,14 @@
+﻿CatBreedModel
+
+<h1>Breeds</h1>
+
+<form asp-controller="Breeds" asp-action="GetCatByBreed" method="post">
+    <div class="form-group">
+        <label for="breedId">Select a breed:</label>
+        <select asp-items="@Model.LstBreed" class="form-select" name="breedId">
+           <option value="Name">select option</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary" >Submit</button>
+</form>
+

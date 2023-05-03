@@ -2,7 +2,7 @@
 
 namespace Purrrfect_Cats.Controllers
 {
-    public class FavoriteCats : Controller
+    public class FavoriteCatsController : Controller
     {
         public IActionResult Index()
         {

@@ -1,6 +1,32 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@model BreedTypeModel
+
+
+<div>
+@foreach (var cat in Model.LstOneCatBreed)
+{
+   
+    
+    foreach (var breed in cat.Breeds)
+    {
+       <h1>@breed.Name</h1>
+       <P>@breed.Vetstreet_url</P>
+       <p>@breed.Description</p>
+       <p>@breed.Temperament</p>
+        <p>@breed.Origin</p>
+         <p>@breed.Life_span</p>
+          <p>@breed.Wikipedia_url</p>
+           <p>@breed.reference_image_id</p>
+          
+       
+         
+    }
+     <img style="height:200px"src="@cat.Url"/>
+
 }
-<h1>Breeds Page</h1>
+<div>
+     <p><a asp-controller="FavoriteCats" asp-action="Index">Add new Favorite Cat</a></p>
+</div>
+<p >Add New Favorite Cat</p>
+
+
+</div>
