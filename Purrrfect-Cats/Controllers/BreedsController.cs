@@ -9,6 +9,7 @@ namespace Purrrfect_Cats.Controllers
     public class BreedsController : Controller
     {
         public async Task<IActionResult> Breeds()
+
         {
 
             List<SelectListItem> LstBreed = new List<SelectListItem>();
@@ -53,7 +54,7 @@ namespace Purrrfect_Cats.Controllers
         [HttpPost]
         public async Task<IActionResult> GetCatByBreed()
         {
-            CatInfoModel catInfo = new CatInfoModel();
+            //CatInfoModel catInfo = new CatInfoModel();
             List<BreedTypeModel> LstOneCatBreed = new List<BreedTypeModel>();
             BreedTypeModel oneBreed = new BreedTypeModel();
             var client = new HttpClient();
@@ -70,7 +71,7 @@ namespace Purrrfect_Cats.Controllers
 
                     foreach (var catBreed in getOneBreed)
                     {
-                        catInfo = new CatInfoModel();
+                        //catInfo = new CatInfoModel();
                         oneBreed = new BreedTypeModel();
                         oneBreed.Id = catBreed.Id;
                         oneBreed.Url = catBreed.Url;
