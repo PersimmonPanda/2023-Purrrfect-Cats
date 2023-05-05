@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owner\\Documents\\lauchcode\\c#\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj": {}
+    "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owner\\Documents\\lauchcode\\c#\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj": {
+    "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owner\\Documents\\lauchcode\\c#\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
+        "projectUniqueName": "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
         "projectName": "Purrrfect-Cats",
-        "projectPath": "C:\\Users\\Owner\\Documents\\lauchcode\\c#\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
-        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owner\\Documents\\lauchcode\\c#\\2023-Purrrfect-Cats\\Purrrfect-Cats\\obj\\",
+        "projectPath": "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
+        "packagesPath": "C:\\Users\\Iltani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Iltani\\Desktop\\C# Projects 2.0\\2023-Purrrfect-Cats\\Purrrfect-Cats\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Iltani\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,6 +63,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

@@ -3,4 +3,39 @@
 *@
 @{
 }
-<h1>My Favorite Cats</h1>
+
+@model Purrrfect_Cats.Models.Hashtag
+
+<center><h1>My Favorite Cats</h1></center>
+
+<center><img style="height:375px" width="550px" src="https://cf.ltkcdn.net/cats/cat-breeds/images/std/325488-800x515-ragdoll-cat-breed.webp"/></center>
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">Default checkbox</label>
+</div>
+
+@*(var cat in cats)
+{
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">Default checkbox</label>
+  </div>
+}*@
+
+<h3>Add New Hashtag</h3>
+
+<form asp-controller="Hashtag" asp-action="Add" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <input type="submit" value="Add Hashtag" />
+</form>
+<li class="nav-item">
+    <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Index">All Events</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Add">Add Event</a>
+</li>
