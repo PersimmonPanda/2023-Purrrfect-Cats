@@ -1,14 +1,50 @@
+<<<<<<< HEAD
 ﻿@Model CatBreedModel
+=======
+﻿@model ListCatsBreedsModel 
+>>>>>>> 8a58881dcfb78cd502d72059ab880bfbc8c92894
 
 <h1>Breeds</h1>
 
 <form asp-controller="Breeds" asp-action="GetCatByBreed" method="post">
     <div class="form-group">
         <label for="breedId">Select a breed:</label>
-        <select asp-items="@Model.LstBreed" class="form-select" name="breedId">
+        <select asp-items="@Model.LstBreeds" class="form-select" name="breedId">
            <option value="Name">select option</option>
         </select>
     </div>
     <button type="submit" class="btn btn-primary" >Submit</button>
 </form>
+
+@if (Model.SelectedBreed != null) {
+    
+<form asp-controller="FavoriteCats" asp-action="Index" method="post">
+    <div class="form-group">
+       
+    @foreach (var cat in Model.SelectedBreed)
+    {
+        
+        <a href="#" onclick="document.getElementById('myForm').submit();">
+            <img name="hola" style="height:200px"src="@cat.Url"/></a>
+
+        <button type="submit" class="btn btn-primary" >Submit</button>
+
+        foreach (var breed in cat.Breeds)
+        {
+           
+            <p >@breed.Description</p>
+
+            <h1>@breed.Name</h1>
+            <p>@breed.Lap</p>
+            <p>@breed.Alt_names</p>
+        }
+
+    }
+      
+    </div>
+   
+</form>
+
+
+}
 
