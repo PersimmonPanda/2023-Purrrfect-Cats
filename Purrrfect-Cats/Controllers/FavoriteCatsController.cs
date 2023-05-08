@@ -4,13 +4,13 @@ namespace Purrrfect_Cats.Controllers
 {
     public class FavoriteCatsController : Controller
     {
-        
-        public IActionResult Index(string selectedBreed)
+
+       
+        public IActionResult FavoriteCats()
         {
             
-
-            var catList = selectedBreed;
-            return View("FavoriteCats");
+            return View();
         }
+
     }
 }

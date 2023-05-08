@@ -14,16 +14,15 @@
 
 @if (Model.SelectedBreed != null) {
     
-<form asp-controller="FavoriteCats" asp-action="Index" method="post">
+<form asp-controller="FavoriteCats" asp-action="FavoriteCats" method="post">
     <div class="form-group">
         <div class="container">
-            <div class="row">
-            
-                
+            <div class="row">              
                 @foreach (var cat in Model.SelectedBreed)
+
                 {
                     <div class="col-4">
-                       <img name="hola" class="breedImg" src="@cat.Url"/>                
+                       <img name="breedId" class="breedImg" src="@cat.Url"/>                
                         <div class="text-success">
                           <hr>
                         </div>
@@ -58,11 +57,16 @@
         <p>Suppressed: @Model.SelectedBreed.First().Breeds.First().Suppressed_tail</p>
         
     </div>
-      <button type="submit" class="btn btn-primary botonOption" >Add To Favorite</button>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <button type="submit" class="btn btn-primary botonOption" >Add To Favorite</button>
+            }else{
+                <div class="alert alert-warning" role="alert">
+                    Please <a href="/Identity/Account/Login">log in</a> or <a href="/Identity/Account/Register">register</a> to add cats to your favorite list.
+                </div>
+            }
+            
     </div>
-   
 </form>
-
-
 }
 
