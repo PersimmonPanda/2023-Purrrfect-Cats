@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Purrrfect_Cats.Data;
+﻿
 
+using System.ComponentModel.DataAnnotations;
 
 namespace Purrrfect_Cats.Models
 {

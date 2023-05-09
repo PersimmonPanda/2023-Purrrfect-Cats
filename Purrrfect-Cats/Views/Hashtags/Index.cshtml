@@ -13,7 +13,7 @@ else
             <th>Id</th>
             <th>Tag Name</th>
         </tr>
-        @foreach (Hashtag hashtags in Model)
+        @foreach (var hashtags in Model)
         {
             <tr>
                 <td>@hashtags.Id</td>
@@ -22,4 +22,4 @@ else
         }
     </table>
 }
-<a class="nav-link text-secondary" asp-area="" asp-controller="Hashtags" asp-action="Add">Add a Hashtag!</a>
+<a class="nav-link text-primary" asp-area="" asp-controller="Hashtags" asp-action="Add">Add a Hashtag!</a>

@@ -4,7 +4,7 @@ namespace Purrrfect_Cats.Controllers
 {
     public class FavoriteCatsController : Controller
     {
-        [HttpPost]
+        
         public IActionResult Index(string selectedBreed)
         {
             string valorSeleccionado = Request.Form["hola"];

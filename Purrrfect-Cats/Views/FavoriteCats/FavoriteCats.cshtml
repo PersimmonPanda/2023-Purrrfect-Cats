@@ -23,9 +23,8 @@
   </div>
 }*@
 
-<h3>Add New Hashtag</h3>
 
-<form asp-controller="Hashtag" asp-action="Add" method="post">
+<form asp-controller="Hashtags" asp-action="Add" method="post">
     <div class="form-group">
         <label asp-for="TagName"></label>
         <input asp-for="TagName" />
@@ -34,8 +33,7 @@
     <input type="submit" value="Add Hashtag" />
 </form>
 <li class="nav-item">
-    <a class="nav-link text-dark" asp-area="" asp-controller="FavoriteCats" asp-action="Index">All Events</a>
+    <a class="nav-link text-primary" asp-area="" asp-controller="FavoriteCats" asp-action="Add">Your Favorite Cats</a>
 </li>
-<li class="nav-item">
-    <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Add">Add Event</a>
-</li>
+<a class="nav-link text-primary" asp-area="" asp-controller="Breeds" asp-action="Breeds">Add A Breed</a>
+<a class="nav-link text-primary" asp-area="" asp-controller="Hashtags" asp-action="Delete">Delete</a>
