@@ -31,17 +31,62 @@ body {
 }
 .HomeBackground {
     margin-top: -17px;
-    margin-top: -150px;
+    margin-top: -300px;
 }
 #homeimage {
     width: 100%;
     height: 700px;
 }
 .treepicture {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .carouselpictures {
     width: 375px;
-    clip-path: circle(42% at center);
+    clip-path: circle(40% at center);
 }
-   
+.card-img-overlay {
+    
+    top: 153px;
+    left:94px;
+    
+}
+.card-title {
+    color: #747452;
+    font-size: 3.25rem;
+}
+.card-text {
+    color: #747452;
+    font-size: 1.3rem;
+}
+/*---------------------------------------- Breed Page-------------------------*/
+.Title {
+    background-color: #a3a35a8f;
+    border-radius: 33%;
+}
+.breedform1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    margin-bottom: 21px;
+}
+.form-select{
+    text-align:center;
+}
+.botonOption {
+    margin-left: 46%;
+    margin-bottom: 50px;
+}
+.breedImg {
+    height: 183px;
+    margin-bottom: 50px;
+    border-radius: 10%;
+    margin-top: 10%;
+}
+.catInfo {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.alert-warning{
+    text-align:center;
+}

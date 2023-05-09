@@ -106,6 +106,7 @@ C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Mic
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
@@ -150,7 +151,6 @@ C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\ref
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\Purrrfect-Cats.pdb
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\Purrrfect-Cats.genruntimeconfig.cache
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\ref\Purrrfect-Cats.dll
-C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\appsettings.json
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Purrrfect-Cats.staticwebassets.runtime.json
