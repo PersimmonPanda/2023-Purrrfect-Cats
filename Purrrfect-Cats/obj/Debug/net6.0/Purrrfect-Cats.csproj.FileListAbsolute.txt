@@ -260,7 +260,9 @@ C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\bin\D
 C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\MySqlConnector.dll
 C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
@@ -305,5 +307,3 @@ C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\obj\D
 C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\Purrrfect-Cats.pdb
 C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\Purrrfect-Cats.genruntimeconfig.cache
 C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\ref\Purrrfect-Cats.dll
-C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\MySqlConnector.dll
-C:\Users\Iltani\Desktop\C# Projects 2.0\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll

@@ -5,21 +5,20 @@ namespace Purrrfect_Cats.Models
     public class FavoriteCats
     {
         public string BreedName { get; set; }
-
         public int Id { get; set; }
 
-        public ICollection<Hashtag>? Tags { get; set; }
+        public ICollection<Hashtag>? Hashtags { get; set; }
+        //public object FavoriteCats { get; internal set; }
 
         public FavoriteCats(string breedName)
         {
             BreedName = breedName;
-            Tags = new List<Hashtag>();
+            Hashtags = new List<Hashtag>();
         }
 
         public FavoriteCats()
         {
         }
-
 
         public override string ToString()
         {

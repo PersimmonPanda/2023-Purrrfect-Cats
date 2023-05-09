@@ -10,13 +10,14 @@ namespace Purrrfect_Cats.Models
 
         [Required(ErrorMessage = "Hashtag is required")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Hashtag must be between 3 and 50 characters")]
-        public string Name { get; set; }
+        public string TagName { get; set; }
 
         public ICollection<FavoriteCats>? FavoriteCats { get; set; }
+        //public object Hashtags { get; set; }
 
-        public Hashtag(string name)
+        public Hashtag(string tagName)
         {
-            Name = name;
+            TagName = tagName;
             FavoriteCats = new List<FavoriteCats>();
         }
 

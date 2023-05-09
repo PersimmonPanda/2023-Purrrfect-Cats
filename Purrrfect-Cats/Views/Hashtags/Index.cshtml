@@ -1,0 +1,25 @@
+﻿@model List<Purrrfect_Cats.Models.Hashtag>
+
+<h1>All Hashtags</h1>
+
+@if (Model.Count == 0)
+{
+    <p>No tags yet!</p>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Tag Name</th>
+        </tr>
+        @foreach (Hashtag hashtags in Model)
+        {
+            <tr>
+                <td>@hashtags.Id</td>
+                <td><a asp-controller="Hashtags" asp-action="Detail" asp-route-id="@hashtags.Id">@hashtags.TagName</a></td>
+            </tr>
+        }
+    </table>
+}
+<a class="nav-link text-secondary" asp-area="" asp-controller="Hashtags" asp-action="Add">Add a Hashtag!</a>

@@ -32,20 +32,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXRzXEZhdm9yaXRlQ2F0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Iltani/Desktop/C\# Projects 2.0/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtag/Add.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ1xBZGQuY3NodG1s
+[C:/Users/Iltani/Desktop/C\# Projects 2.0/2023-Purrrfect-Cats/Purrrfect-Cats/Views/FavoriteCats/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Iltani/Desktop/C\# Projects 2.0/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtag/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ1xEZWxldGUuY3NodG1s
+[C:/Users/Iltani/Desktop/C\# Projects 2.0/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Iltani/Desktop/C\# Projects 2.0/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtag/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ1xFZGl0LmNzaHRtbA==
+[C:/Users/Iltani/Desktop/C\# Projects 2.0/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Iltani/Desktop/C\# Projects 2.0/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtag/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ1xJbmRleC5jc2h0bWw=
+[C:/Users/Iltani/Desktop/C\# Projects 2.0/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iltani/Desktop/C\# Projects 2.0/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Iltani/Desktop/C\# Projects 2.0/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Iltani/Desktop/C\# Projects 2.0/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Home/Index.cshtml]

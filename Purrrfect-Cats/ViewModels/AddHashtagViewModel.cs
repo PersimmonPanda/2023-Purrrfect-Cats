@@ -24,7 +24,7 @@ namespace Purrrfect_Cats.ViewModels
                 Hashtag.Add(new SelectListItem
                 {
                     Value = hashtag.Id.ToString(),
-                    Text = hashtag.Name
+                    Text = hashtag.TagName
                 });
             }
 

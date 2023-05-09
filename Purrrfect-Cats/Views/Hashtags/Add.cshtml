@@ -8,11 +8,11 @@
 
 <h1>Add New Hashtag</h1>
 
-<form asp-controller="Hashtag" asp-action="Add" method="post">
+<form asp-controller="Hashtags" asp-action="Add" method="post">
     <div class="form-group">
-        <label asp-for="Name"></label>
-        <input asp-for="Name" />
-        <span asp-validation-for="Name"></span>
+        <label asp-for="TagName"></label>
+        <input asp-for="TagName" />
+        <span asp-validation-for="TagName"></span>
     </div>
     <input type="submit" value="Add Hashtag" />
 </form>

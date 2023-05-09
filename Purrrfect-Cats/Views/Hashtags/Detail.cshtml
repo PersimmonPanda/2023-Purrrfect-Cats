@@ -1,0 +1,16 @@
+﻿@model Purrrfect_Cats.Models.Hashtag
+
+@if (Model.FavoriteCats.ToList().Count == 0)
+{
+    <h1>There are no cats here!</h1>
+}
+else
+{
+    <h1>Cats Tagged: @Model.TagName</h1>
+    <ul>
+        @foreach (var catTag in Model.FavoriteCats)
+        {
+            <li>@catTag.BreedName</li>
+        }
+    </ul>
+}
