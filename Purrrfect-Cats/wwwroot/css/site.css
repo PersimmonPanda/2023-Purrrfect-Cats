@@ -72,9 +72,14 @@ body {
 .form-select{
     text-align:center;
 }
-.botonOption {
+.botonOption1 {
     margin-left: 46%;
     margin-bottom: 50px;
+}
+.botonOption2 {
+    margin-left: 45%;
+    margin-bottom: 59px;
+    margin-top: 50px;
 }
 .breedImg {
     height: 183px;
