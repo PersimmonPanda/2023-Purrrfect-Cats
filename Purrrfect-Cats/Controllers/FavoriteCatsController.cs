@@ -10,8 +10,9 @@ namespace Purrrfect_Cats.Controllers
         public IActionResult FavoriteCats()
         {
             FavoriteCatsModel selectedCat = new FavoriteCatsModel();
+
             selectedCat = GetCatid();
-            return View(selectedCat);
+            return View(selectedCat); 
         }
         
         
