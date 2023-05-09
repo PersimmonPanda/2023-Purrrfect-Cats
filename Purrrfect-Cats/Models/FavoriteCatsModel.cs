@@ -2,7 +2,8 @@
 {
     public class FavoriteCatsModel
     {
-        public List<string> ImageUrls { get; set; }
-        public List<int> CatIds { get; set; }
+        public string  CatIds { get; set; }
+
+        public string ImageUrls { get; set; }
     }
 }

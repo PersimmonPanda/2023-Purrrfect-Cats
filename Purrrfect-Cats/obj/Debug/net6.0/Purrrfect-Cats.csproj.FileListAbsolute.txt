@@ -151,14 +151,13 @@ C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\ref
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\Purrrfect-Cats.pdb
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\Purrrfect-Cats.genruntimeconfig.cache
 C:\Users\Jose\Desktop\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\ref\Purrrfect-Cats.dll
+C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Purrrfect-Cats.dll
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\appsettings.json
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Purrrfect-Cats.staticwebassets.runtime.json
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Purrrfect-Cats.exe
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Purrrfect-Cats.deps.json
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Purrrfect-Cats.runtimeconfig.json
-C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Purrrfect-Cats.dll
-C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Purrrfect-Cats.pdb
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -227,4 +226,5 @@ C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Deb
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\refint\Purrrfect-Cats.dll
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\Purrrfect-Cats.pdb
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\Purrrfect-Cats.genruntimeconfig.cache
+C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\bin\Debug\net6.0\Purrrfect-Cats.pdb
 C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\obj\Debug\net6.0\ref\Purrrfect-Cats.dll
