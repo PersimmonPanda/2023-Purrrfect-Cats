@@ -2,32 +2,33 @@
 
 namespace Purrrfect_Cats.Models
 {
-    public class FavoriteCats
+    public class FavoriteCatsModel
     {
         public string BreedName { get; set; }
-        public int Id { get; set; }
+        public string Id { get; set; }
+        public string ImageUrls { get; set; }
 
         public ICollection<Hashtag>? Hashtags { get; set; }
         //public object FavoriteCats { get; internal set; }
 
-        public FavoriteCats(string breedName)
+        public FavoriteCatsModel(string breedName)
         {
             BreedName = breedName;
             Hashtags = new List<Hashtag>();
         }
 
-        public FavoriteCats()
+        public FavoriteCatsModel()
         {
         }
 
         public override string ToString()
-        {
+    {
             return BreedName;
         }
 
         public override bool Equals(object obj)
         {
-            return obj is FavoriteCats @favoriteCats &&
+            return obj is FavoriteCatsModel @favoriteCats &&
                    Id == @favoriteCats.Id;
         }
 

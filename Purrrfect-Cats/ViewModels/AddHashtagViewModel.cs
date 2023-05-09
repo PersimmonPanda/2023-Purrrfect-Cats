@@ -8,14 +8,14 @@ namespace Purrrfect_Cats.ViewModels
     public class AddHashtagViewModel
     {
 
-        public int BreedNameId { get; set; }
-        public FavoriteCats? BreedName { get; set; }
+        public string BreedNameId { get; set; }
+        public FavoriteCatsModel? BreedName { get; set; }
 
         public List<SelectListItem>? Hashtag { get; set; }
 
-        public int HashtagId { get; set; }
+        public string HashtagId { get; set; }
 
-        public AddHashtagViewModel(FavoriteCats theBreedName, List<Hashtag> possibleHashtags)
+        public AddHashtagViewModel(FavoriteCatsModel theBreedName, List<Hashtag> possibleHashtags)
         {
             Hashtag = new List<SelectListItem>();
 

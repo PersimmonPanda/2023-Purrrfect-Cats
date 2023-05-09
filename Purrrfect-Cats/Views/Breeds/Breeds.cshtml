@@ -1,47 +1,77 @@
 ﻿@model ListCatsBreedsModel
 
-
-<h1>Breeds</h1>
-
 <form asp-controller="Breeds" asp-action="GetCatByBreed" method="post">
-    <div class="form-group">
+    <div class="form-group breedform1">
+        <h1 class="Title">Breeds</h1>
         <label for="breedId">Select a breed:</label>
         <select asp-items="@Model.LstBreeds" class="form-select" name="breedId">
            <option value="Name">select option</option>
         </select>
     </div>
-    <button type="submit" class="btn btn-primary" >Submit</button>
+    <button type="submit" class="btn btn-primary botonOption" >Submit</button>
 </form>
+
 
 @if (Model.SelectedBreed != null) {
     
-<form asp-controller="FavoriteCats" asp-action="Index" method="post">
+<form asp-controller="FavoriteCats" asp-action="FavoriteCats" method="post">
     <div class="form-group">
-       
-    @foreach (var cat in Model.SelectedBreed)
-    {
-        
-        <a href="#" onclick="document.getElementById('myForm').submit();">
-            <img name="hola" style="height:200px"src="@cat.Url"/></a>
+        <div class="container">
+            <div class="row">    
+                  
+               
+                @foreach (var cat in Model.SelectedBreed)
 
-        <button type="submit" class="btn btn-primary" >Submit</button>
-
-        foreach (var breed in cat.Breeds)
-        {
-           
-            <p >@breed.Description</p>
-
-            <h1>@breed.Name</h1>
-            <p>@breed.Lap</p>
-            <p>@breed.Alt_names</p>
-        }
-
-    }
-      
+                {
+                    <div class="col-4">
+                       <img name="breedImg" class="breedImg" src="@cat.Url"/>   
+                         <input type="hidden" name="catId" value="@cat.Id"/>
+                         <input type="hidden" name="catUrl" value="@cat.Url"/>                   
+                        <div class="text-success">
+                          <hr>
+                        </div>
+                    </div>         
+                }          
+        </div>
     </div>
-   
+    <div class="catInfo">
+                       
+        <h1>@Model.SelectedBreed.First().Breeds.First().Name</h1>
+        <p >@Model.SelectedBreed.First().Breeds.First().Description</p>
+        <a href="@Model.SelectedBreed.First().Breeds.First().Cfa_url">@Model.SelectedBreed.First().Breeds.First().Cfa_url</a>
+        <a href="@Model.SelectedBreed.First().Breeds.First().Vetstreet_url">@Model.SelectedBreed.First().Breeds.First().Vetstreet_url</a>
+        <a href="@Model.SelectedBreed.First().Breeds.First().Vcahospitals_url">@Model.SelectedBreed.First().Breeds.First().Vcahospitals_url</a>
+                        
+        <p>Temperament: @Model.SelectedBreed.First().Breeds.First().Temperament</p>
+        <p>Country: @Model.SelectedBreed.First().Breeds.First().Country_codes</p>
+        <p>Life Span: @Model.SelectedBreed.First().Breeds.First().Life_span</p>
+        <p>Indoor: @Model.SelectedBreed.First().Breeds.First().Indoor</p>
+        <p>Adaptability: @Model.SelectedBreed.First().Breeds.First().Adaptability</p>
+        <p>Affection Level: @Model.SelectedBreed.First().Breeds.First().Affection_level</p>
+        <p>Child Friendly: @Model.SelectedBreed.First().Breeds.First().Child_friendly</p>
+        <p>Dog Friendly: @Model.SelectedBreed.First().Breeds.First().Dog_friendly</p>
+        <p>Energy Level: @Model.SelectedBreed.First().Breeds.First().Energy_level</p>
+        <p>Grooming: @Model.SelectedBreed.First().Breeds.First().Grooming</p>
+        <p>Health Issues: @Model.SelectedBreed.First().Breeds.First().Health_issues</p>
+        <p>Intelligence: @Model.SelectedBreed.First().Breeds.First().Intelligence</p>
+        <p>Experimental: @Model.SelectedBreed.First().Breeds.First().Experimental</p>
+        <p>Natural: @Model.SelectedBreed.First().Breeds.First().Natural</p>
+        <p>Rare: @Model.SelectedBreed.First().Breeds.First().Rare</p>
+        <p>Rex: @Model.SelectedBreed.First().Breeds.First().Rex</p>
+        <p>Suppressed: @Model.SelectedBreed.First().Breeds.First().Suppressed_tail</p>
+        
+    </div>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <button type="submit" class="btn btn-primary botonOption" >Add To Favorite</button>
+            }else{
+                <div class="alert alert-warning" role="alert">
+                    Please <a href="/Identity/Account/Login">log in</a> or <a href="/Identity/Account/Register">register</a> to add cats to your favorite list.
+                </div>
+            }
+            
+
+    </div>
 </form>
-
-
 }
 

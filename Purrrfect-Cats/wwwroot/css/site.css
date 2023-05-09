@@ -58,4 +58,35 @@ body {
     color: #747452;
     font-size: 1.3rem;
 }
-
+/*---------------------------------------- Breed Page-------------------------*/
+.Title {
+    background-color: #a3a35a8f;
+    border-radius: 33%;
+}
+.breedform1 {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    margin-bottom: 21px;
+}
+.form-select{
+    text-align:center;
+}
+.botonOption {
+    margin-left: 46%;
+    margin-bottom: 50px;
+}
+.breedImg {
+    height: 183px;
+    margin-bottom: 50px;
+    border-radius: 10%;
+    margin-top: 10%;
+}
+.catInfo {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.alert-warning{
+    text-align:center;
+}

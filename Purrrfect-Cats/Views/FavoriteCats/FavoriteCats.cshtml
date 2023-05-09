@@ -1,12 +1,24 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+@model FavoriteCatsModel
+
+<h1>Favorite Cats</h1>
+
+@if (Model == null)
+{
+    <p>You haven't favorited any cats yet.</p>
+}
+else
+{   
+    <h2>@Model.Id</h2>
+    var model = Model.ImageUrls.Split(",");  
+     
+                @foreach (var cat in model)
+
+                {
+                    <img src="@cat"/>
+                }          
+    
 }
 
-@model Purrrfect_Cats.Models.Hashtag
-
-<center><h1>My Favorite Cats</h1></center>
 
 <center><img style="height:375px" width="550px" src="https://cf.ltkcdn.net/cats/cat-breeds/images/std/325488-800x515-ragdoll-cat-breed.webp"/></center>
 
@@ -15,25 +27,11 @@
   <label class="form-check-label" for="defaultCheck1">Default checkbox</label>
 </div>
 
-@*(var cat in cats)
-{
-  <div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-    <label class="form-check-label" for="defaultCheck1">Default checkbox</label>
-  </div>
-}*@
 
-
-<form asp-controller="Hashtags" asp-action="Add" method="post">
-    <div class="form-group">
-        <label asp-for="TagName"></label>
-        <input asp-for="TagName" />
-        <span asp-validation-for="TagName"></span>
-    </div>
-    <input type="submit" value="Add Hashtag" />
-</form>
 <li class="nav-item">
     <a class="nav-link text-primary" asp-area="" asp-controller="FavoriteCats" asp-action="Add">Your Favorite Cats</a>
 </li>
 <a class="nav-link text-primary" asp-area="" asp-controller="Breeds" asp-action="Breeds">Add A Breed</a>
 <a class="nav-link text-primary" asp-area="" asp-controller="Hashtags" asp-action="Delete">Delete</a>
+
+<a href="c:\users\iltani\desktop\c# projects 2.0\2023-purrrfect-cats\purrrfect-cats\views\favoritecats\favoritecats.cshtml">c:\users\iltani\desktop\c# projects 2.0\2023-purrrfect-cats\purrrfect-cats\views\favoritecats\favoritecats.cshtml</a>
