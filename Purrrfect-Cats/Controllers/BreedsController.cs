@@ -64,7 +64,7 @@ namespace Purrrfect_Cats.Controllers
 
             var client = new HttpClient();
             string valorSeleccionado = Request.Form["breedId"];
-            var response = await client.GetAsync("https://api.thecatapi.com/v1/images/search?limit=6&breed_ids=" + valorSeleccionado + "&api_key=live_F9pFgfTNQsm0mJfBg0FpALoycqilewVeMw8LPpcsmqTZpsydTTRjvhINAQxvTyRE");
+            var response = await client.GetAsync("https://api.thecatapi.com/v1/images/search?limit=3&breed_ids=" + valorSeleccionado + "&api_key=live_F9pFgfTNQsm0mJfBg0FpALoycqilewVeMw8LPpcsmqTZpsydTTRjvhINAQxvTyRE");
             if (response.IsSuccessStatusCode)
             {
                 var jsonGetOneBreed = await response.Content.ReadAsStringAsync();

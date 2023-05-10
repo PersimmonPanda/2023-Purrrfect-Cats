@@ -1,26 +1,28 @@
-@model FavoriteCatsModel
+@model List<FavoriteCatsModel>
 
 <h1>Favorite Cats</h1>
 
+<center><img style="height:375px" width="550px" src="https://cf.ltkcdn.net/cats/cat-breeds/images/std/325488-800x515-ragdoll-cat-breed.webp"/></center>
+
 @if (Model == null)
 {
-    <p>You haven't favorited any cats yet.</p>
+    <p>You haven't added any cats to your list yet!</p>
 }
 else
 {   
-    <h2>@Model.Id</h2>
-    var model = Model.ImageUrls.Split(",");  
+    @foreach (var FavoriteCat in Model)
+    {
+    <h4>@FavoriteCat.BreedName</h4>
+    var model = FavoriteCat.BreedName.Split(",");  
      
-                @foreach (var cat in model)
+               @* @foreach (var cat in model)
 
                 {
                     <img src="@cat"/>
-                }          
-    
+                }      *@ 
+    }
 }
 
-
-<center><img style="height:375px" width="550px" src="https://cf.ltkcdn.net/cats/cat-breeds/images/std/325488-800x515-ragdoll-cat-breed.webp"/></center>
 
 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">

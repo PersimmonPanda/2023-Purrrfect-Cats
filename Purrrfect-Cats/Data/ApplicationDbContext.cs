@@ -5,7 +5,7 @@ using Purrrfect_Cats.Models;
 
 namespace Purrrfect_Cats.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
         public DbSet<Hashtag>? Hashtags { get; set; }
         public DbSet<FavoriteCatsModel>? FavoriteCats { get; set; }

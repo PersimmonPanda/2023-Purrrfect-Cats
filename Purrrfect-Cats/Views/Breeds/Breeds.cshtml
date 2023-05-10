@@ -8,7 +8,7 @@
            <option value="Name">select option</option>
         </select>
     </div>
-    <button type="submit" class="btn btn-primary botonOption" >Submit</button>
+    <button type="submit" class="btn btn-primary botonOption">Search</button>
 </form>
 
 
@@ -25,13 +25,15 @@
                 {
                     <div class="col-4">
                        <img name="breedImg" class="breedImg" src="@cat.Url"/>   
-                         <input type="hidden" name="catId" value="@cat.Id"/>
-                         <input type="hidden" name="catUrl" value="@cat.Url"/>                   
+                         
+                                         
                         <div class="text-success">
                           <hr>
                         </div>
                     </div>         
-                }          
+                }       
+                <input type="hidden" name="catId" value="@Model.Id"/>
+                <input type="hidden" name="breedName" value="@Model.SelectedBreed.First().Breeds.First().Name"/>  
         </div>
     </div>
     <div class="catInfo">

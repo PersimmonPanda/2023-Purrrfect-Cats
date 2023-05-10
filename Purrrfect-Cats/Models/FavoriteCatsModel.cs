@@ -6,7 +6,7 @@ namespace Purrrfect_Cats.Models
     {
         public string BreedName { get; set; }
         public string Id { get; set; }
-        public string ImageUrls { get; set; }
+        //public string breedName { get; set; }
 
         public ICollection<Hashtag>? Hashtags { get; set; }
         //public object FavoriteCats { get; internal set; }
