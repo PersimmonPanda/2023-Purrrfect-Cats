@@ -22,8 +22,10 @@ namespace Purrrfect_Cats.Controllers
 
 
             try {
+                
                 string catId = Request.Form["catId"];
                 string catUrl = Request.Form["catUrl"];
+                catUrl.Split(",");
                 selectedCat.CatIds = catId;
                 selectedCat.ImageUrls = catUrl;
             }catch(Exception ex)

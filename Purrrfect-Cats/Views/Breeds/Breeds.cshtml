@@ -7,8 +7,9 @@
         <select asp-items="@Model.LstBreeds" class="form-select" name="breedId">
            <option value="Name">select option</option>
         </select>
+         <button type="submit" class="btn btn-primary botonOption1" >Search</button>
     </div>
-    <button type="submit" class="btn btn-primary botonOption1" >Search</button>
+    
 </form>
 
 
@@ -25,13 +26,14 @@
                 {
                     <div class="col-4">
                        <img name="breedImg" class="breedImg" src="@cat.Url"/>   
-                         <input type="hidden" name="catId" value=">@Model.SelectedBreed.First().Breeds.First().Name"/>
-                         <input type="hidden" name="catUrl" value="@cat.Url"/>                   
+                                        
                         <div class="text-success">
                           <hr>
                         </div>
                     </div>         
-                }          
+                }  
+                  <input type="hidden" name="catId" value=">@Model.SelectedBreed.First().Breeds.First().Name"/>
+                  
         </div>
     </div>
     <div class="catInfo">

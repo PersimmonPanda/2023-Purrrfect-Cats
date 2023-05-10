@@ -1,0 +1,28 @@
+@model FavoriteCatsModel
+
+<h1>Favorite Cats</h1>
+
+@if (Model == null)
+{
+    <p>You haven't favorited any cats yet.</p>
+}
+else
+{
+    if(Model.Message == null)
+    {
+         <h2>@Model.CatIds</h2>
+    var model = Model.ImageUrls.Split(",");  
+     
+                @foreach (var cat in model)
+
+                {
+            <img src="@cat"/>
+        }
+    }
+    else
+    {
+        <label>@Model.Message</label>
+    }
+
+    
+}
