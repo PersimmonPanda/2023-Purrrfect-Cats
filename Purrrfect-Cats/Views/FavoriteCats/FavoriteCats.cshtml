@@ -7,17 +7,22 @@
     <p>You haven't favorited any cats yet.</p>
 }
 else
-{   
-    <h2>@Model.CatIds</h2>
+{
+    if(Model.Message == null)
+    {
+         <h2>@Model.CatIds</h2>
     var model = Model.ImageUrls.Split(",");  
      
                 @foreach (var cat in model)
 
                 {
-                    <img src="@cat"/>
-                }          
+            <img src="@cat"/>
+        }
+    }
+    else
+    {
+        <label>@Model.Message</label>
+    }
+
     
 }
-=======
-﻿<h1>Favorite cats</h1>
->>>>>>> 0ad3f8f06cf5ecd214b268a3dbaec40712bc8450
