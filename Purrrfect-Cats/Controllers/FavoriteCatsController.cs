@@ -19,11 +19,18 @@ namespace Purrrfect_Cats.Controllers
         public FavoriteCatsModel GetCatid()
         {
             FavoriteCatsModel selectedCat = new FavoriteCatsModel();
+
+
+            try {
+                string catId = Request.Form["catId"];
+                string catUrl = Request.Form["catUrl"];
+                selectedCat.CatIds = catId;
+                selectedCat.ImageUrls = catUrl;
+            }catch(Exception ex)
+            {
+                selectedCat.Message = "this is test";
+            }
          
-            string catId = Request.Form["catId"];
-            string catUrl = Request.Form["catUrl"];
-            selectedCat.CatIds = catId;
-            selectedCat.ImageUrls = catUrl;
 
             return selectedCat;
         }
