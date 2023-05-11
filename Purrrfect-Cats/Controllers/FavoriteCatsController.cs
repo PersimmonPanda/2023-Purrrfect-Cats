@@ -39,33 +39,52 @@ namespace Purrrfect_Cats.Controllers
         //    List<FavoriteCatsModel> favorites =
         //}
 
-
+        [HttpPost]
         //[Route("FavoriteCats/FavoriteCats")]
+        public IActionResult FavoriteCats(FavoriteCatsModel selectedCat)
+        {
+            //FavoriteCatsModel selectedCat = new FavoriteCatsModel();
+
+       
+       
         public IActionResult Add()
         {
-            FavoriteCatsModel selectedCat = new FavoriteCatsModel();
-
             string catId = Request.Form["catId"];
             string breedName = Request.Form["breedName"];
-            selectedCat.Id = catId;
-            selectedCat.BreedName = breedName;
 
-            context.FavoriteCats.Add(selectedCat);
-            context.SaveChanges();
-            return Redirect("/FavoriteCats/FavoriteCats");
-        }
-        [HttpPost]
-        public IActionResult Delete(string[] Id)
-        {
-            foreach (string CatsId in Id)
+            // Check if the cat already exists in the list
+            FavoriteCatsModel existingCat = context.FavoriteCats.FirstOrDefault(x => x.Id == catId);
+            if (existingCat != null)
             {
-                FavoriteCatsModel DeleteCatsId = context.FavoriteCats.Find(CatsId);
-                context.FavoriteCats.Remove(DeleteCatsId);
+                ViewBag.Message = "Cat already exists in favorites list!";
+                return View("FavoriteCats", context.FavoriteCats.ToList());
+            }
+            else {
+                // Add the cat to the list
+                FavoriteCatsModel selectedCat = new FavoriteCatsModel();
+                selectedCat.Id = catId;
+                selectedCat.BreedName = breedName;
+                context.FavoriteCats.Add(selectedCat);
+                context.SaveChanges();
+
+                ViewBag.Message = "Cat added to favorites list!";
+                return View("FavoriteCats", context.FavoriteCats.ToList());
             }
 
-            context.SaveChanges();
+           
+        }
 
-            return View("/Hashtags");
+
+
+        [HttpPost]
+        public IActionResult Delete(string catId)
+        {
+            
+        FavoriteCatsModel deletecat = context.FavoriteCats.Find(catId);
+        context.FavoriteCats.Remove(deletecat);
+            
+            context.SaveChanges();  
+            return Redirect("FavoriteCats");
         }
 
     }
