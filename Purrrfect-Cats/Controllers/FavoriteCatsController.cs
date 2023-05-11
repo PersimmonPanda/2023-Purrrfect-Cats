@@ -52,7 +52,7 @@ namespace Purrrfect_Cats.Controllers
             if (existingCat != null)
             {
                 ViewBag.Message = "Cat already exists in favorites list!";
-                return Redirect("FavoriteCats");
+                return View("FavoriteCats", context.FavoriteCats.ToList());
             }
             else {
                 // Add the cat to the list
@@ -64,9 +64,7 @@ namespace Purrrfect_Cats.Controllers
 
                 ViewBag.Message = "Cat added to favorites list!";
                 return View("FavoriteCats", context.FavoriteCats.ToList());
-            }
-
-           
+            }        
         }
 
 

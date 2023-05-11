@@ -56,8 +56,6 @@ namespace Purrrfect_Cats.Controllers
         [HttpPost]
         public async Task<IActionResult> GetCatByBreed()
         {
-            //CatInfoModel catInfo = new CatInfoModel();
-
             List<BreedTypeModel> LstOneCatBreed = new List<BreedTypeModel>();
             BreedTypeModel oneBreed = new BreedTypeModel();
             ListCatsBreedsModel selectedBreed = new ListCatsBreedsModel();
@@ -131,18 +129,14 @@ namespace Purrrfect_Cats.Controllers
                         {
                             Value = breed.Id,
                             Text = breed.Name,
-
                         });
-
                     }
                     if (LstBreed != null)
                     {
                         catBreed.LstBreed = LstBreed;
                         catList.LstBreeds = catBreed.LstBreed;
                     }
-
                 }
-
             }
             return LstBreed;
 
