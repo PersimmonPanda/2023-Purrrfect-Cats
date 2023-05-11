@@ -12,14 +12,8 @@ else
 {   
     @foreach (var FavoriteCat in Model)
     {
-    <h4>@FavoriteCat.BreedName</h4>
-    var model = FavoriteCat.BreedName.Split(",");  
-     
-               @* @foreach (var cat in model)
-
-                {
-                    <img src="@cat"/>
-                }      *@ 
+    <center><h4>@FavoriteCat.BreedName</h4></center>
+    
     }
 }
 

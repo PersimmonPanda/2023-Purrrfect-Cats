@@ -39,11 +39,11 @@ namespace Purrrfect_Cats.Controllers
         //    List<FavoriteCatsModel> favorites =
         //}
 
-        [HttpPost]
+
         //[Route("FavoriteCats/FavoriteCats")]
-        public IActionResult FavoriteCats(FavoriteCatsModel selectedCat)
+        public IActionResult Add()
         {
-            //FavoriteCatsModel selectedCat = new FavoriteCatsModel();
+            FavoriteCatsModel selectedCat = new FavoriteCatsModel();
 
             string catId = Request.Form["catId"];
             string breedName = Request.Form["breedName"];
@@ -52,7 +52,20 @@ namespace Purrrfect_Cats.Controllers
 
             context.FavoriteCats.Add(selectedCat);
             context.SaveChanges();
-            return View();
+            return Redirect("/FavoriteCats/FavoriteCats");
+        }
+        [HttpPost]
+        public IActionResult Delete(string[] Id)
+        {
+            foreach (string CatsId in Id)
+            {
+                FavoriteCatsModel DeleteCatsId = context.FavoriteCats.Find(CatsId);
+                context.FavoriteCats.Remove(DeleteCatsId);
+            }
+
+            context.SaveChanges();
+
+            return View("/Hashtags");
         }
 
     }
