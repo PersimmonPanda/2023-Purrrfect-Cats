@@ -20,12 +20,36 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Jose/Desktop/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Breeds/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJlZWRzXEluZGV4LmNzaHRtbA==
+[C:/Users/Jose/Desktop/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Breeds/Breeds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJlZWRzXEJyZWVkcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jose/Desktop/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/FavoriteCats/FavoriteCats.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXRzXEZhdm9yaXRlQ2F0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jose/Desktop/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/FavoriteCats/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jose/Desktop/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jose/Desktop/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jose/Desktop/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jose/Desktop/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jose/Desktop/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jose/Desktop/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Home/Index.cshtml]

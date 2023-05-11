@@ -1,6 +1,30 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+@model List<FavoriteCatsModel>
+
+<div style="text-align:center;">
+    <h1>Favorite Cats</h1>
+</div>
+
+<center><img style="height:375px" width="550px" src="https://cf.ltkcdn.net/cats/cat-breeds/images/std/325488-800x515-ragdoll-cat-breed.webp"/></center>
+
+@if (Model == null)
+{
+    <p>You haven't added any cats to your list yet!</p>
 }
-<h1>My Favorite Cats</h1>
+else
+{   
+    <form method="post">
+    @foreach (var FavoriteCat in Model)
+    {
+        <div style="text-align:center">
+            <h4>@FavoriteCat.BreedName  <input class="form-check-input" type="checkbox" value="@FavoriteCat.Id" name="catId"></h4>
+        </div>
+    }
+    <div style="text-align:center">
+        <a class="nav-link text-primary" asp-area="" asp-controller="Breeds" asp-action="Breeds">Add A Breed</a>
+        <input type="submit" value="Delete Selected Cats" class="btn btn-danger text-center"  asp-controller="FavoriteCats" asp-action="Delete">
+    </div>
+</form>
+}
+
+    
+
