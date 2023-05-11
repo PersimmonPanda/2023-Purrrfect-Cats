@@ -10,30 +10,35 @@
 }
 else
 {   
+    <form method="post">
+    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    {
+        <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+    }
+    @if (!string.IsNullOrEmpty(ViewBag.SuccessMessage))
+    {
+        <div class="alert alert-success">@ViewBag.SuccessMessage</div>
+    }
     @foreach (var FavoriteCat in Model)
     {
-    <h4>@FavoriteCat.BreedName</h4>
-    var model = FavoriteCat.BreedName.Split(",");  
-     
-               @* @foreach (var cat in model)
-
-                {
-                    <img src="@cat"/>
-                }      *@ 
+        <div style="text-align:center">
+            <h4>@FavoriteCat.BreedName  <input class="form-check-input" type="checkbox" value="@FavoriteCat.Id" name="catId"></h4>
+        </div>
     }
+    <div style="text-align:center">
+        <a class="nav-link text-primary" asp-area="" asp-controller="Breeds" asp-action="Breeds">Add A Breed</a>
+        <input type="submit" value="Delete Selected Cats" class="btn btn-danger text-center"  asp-controller="FavoriteCats" asp-action="Delete">
+    </div>
+</form>
 }
 
+    
 
-<div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-  <label class="form-check-label" for="defaultCheck1">Default checkbox</label>
-</div>
-
-
-<li class="nav-item">
+@*
+    <li class="nav-item">
     <a class="nav-link text-primary" asp-area="" asp-controller="FavoriteCats" asp-action="Add">Your Favorite Cats</a>
 </li>
 <a class="nav-link text-primary" asp-area="" asp-controller="Breeds" asp-action="Breeds">Add A Breed</a>
-<a class="nav-link text-primary" asp-area="" asp-controller="Hashtags" asp-action="Delete">Delete</a>
+<a class="nav-link text-primary" asp-area="" asp-controller="FavoriteCats" asp-action="Delete">Delete</a>
+*@
 
-<a href="c:\users\iltani\desktop\c# projects 2.0\2023-purrrfect-cats\purrrfect-cats\views\favoritecats\favoritecats.cshtml">c:\users\iltani\desktop\c# projects 2.0\2023-purrrfect-cats\purrrfect-cats\views\favoritecats\favoritecats.cshtml</a>

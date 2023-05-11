@@ -15,7 +15,7 @@ namespace Purrrfect_Cats.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //set up your connection for many to many (skills to jobs)
+          
             modelBuilder.Entity<FavoriteCatsModel>()
             .HasMany(p => p.Hashtags)
             .WithMany(b => b.FavoriteCats).UsingEntity(a => a.ToTable("CatTags"));
