@@ -11,8 +11,8 @@ using Purrrfect_Cats.Data;
 namespace Purrrfect_Cats.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230510160622_ManyToManyMigrations")]
-    partial class ManyToManyMigrations
+    [Migration("20230512050600_migrattion")]
+    partial class migrattion
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,8 +26,8 @@ namespace Purrrfect_Cats.Migrations
                     b.Property<string>("FavoriteCatsId")
                         .HasColumnType("varchar(255)");
 
-                    b.Property<string>("HashtagsId")
-                        .HasColumnType("varchar(255)");
+                    b.Property<int>("HashtagsId")
+                        .HasColumnType("int");
 
                     b.HasKey("FavoriteCatsId", "HashtagsId");
 
@@ -248,8 +248,9 @@ namespace Purrrfect_Cats.Migrations
 
             modelBuilder.Entity("Purrrfect_Cats.Models.Hashtag", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("varchar(255)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
                     b.Property<string>("TagName")
                         .IsRequired()
