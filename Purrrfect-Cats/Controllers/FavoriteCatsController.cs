@@ -12,7 +12,7 @@ namespace Purrrfect_Cats.Controllers
         {
             context = dbContext;
         }
-       
+
         public IActionResult FavoriteCats()
         {
 
@@ -39,9 +39,8 @@ namespace Purrrfect_Cats.Controllers
         //    List<FavoriteCatsModel> favorites =
         //}
 
-
-       
-       
+        [HttpPost]
+        //[Route("FavoriteCats/FavoriteCats")]
         public IActionResult Add()
         {
             string catId = Request.Form["catId"];
@@ -54,7 +53,8 @@ namespace Purrrfect_Cats.Controllers
                 ViewBag.Message = "Cat already exists in favorites list!";
                 return View("FavoriteCats", context.FavoriteCats.ToList());
             }
-            else {
+            else
+            {
                 // Add the cat to the list
                 FavoriteCatsModel selectedCat = new FavoriteCatsModel();
                 selectedCat.Id = catId;
@@ -64,7 +64,7 @@ namespace Purrrfect_Cats.Controllers
 
                 ViewBag.Message = "Cat added to favorites list!";
                 return View("FavoriteCats", context.FavoriteCats.ToList());
-            }        
+            }
         }
 
 
@@ -72,13 +72,12 @@ namespace Purrrfect_Cats.Controllers
         [HttpPost]
         public IActionResult Delete(string catId)
         {
-            
-        FavoriteCatsModel deletecat = context.FavoriteCats.Find(catId);
-        context.FavoriteCats.Remove(deletecat);
-            
-            context.SaveChanges();  
+
+            FavoriteCatsModel deletecat = context.FavoriteCats.Find(catId);
+            context.FavoriteCats.Remove(deletecat);
+
+            context.SaveChanges();
             return Redirect("FavoriteCats");
         }
-
     }
-}
+}    

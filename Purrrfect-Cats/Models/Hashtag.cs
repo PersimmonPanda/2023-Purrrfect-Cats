@@ -6,7 +6,7 @@ namespace Purrrfect_Cats.Models
 {
     public class Hashtag
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "Hashtag is required")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Hashtag must be between 3 and 50 characters")]

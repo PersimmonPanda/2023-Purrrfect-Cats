@@ -61,7 +61,7 @@ namespace Purrrfect_Cats.Controllers
             if (ModelState.IsValid)
             {
                 string favoriteCatsId = viewModel.BreedNameId;
-                string hashtagId = viewModel.HashtagId;
+                int hashtagId = viewModel.HashtagId;
 
                 FavoriteCatsModel theFavoriteCats = context.FavoriteCats.Include(p => p.Hashtags).Where(e => e.Id == favoriteCatsId).First();
                 Hashtag theHashtag = context.Hashtags.Where(t => t.Id == hashtagId).First();
@@ -75,7 +75,7 @@ namespace Purrrfect_Cats.Controllers
             return View(viewModel);
         }
 
-        public IActionResult Detail(string id)
+        public IActionResult Detail(int id)
         {
             Hashtag theHashtag = context.Hashtags.Include(e => e.FavoriteCats).Where(t => t.Id == id).First();
 
