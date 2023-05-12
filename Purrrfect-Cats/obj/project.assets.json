@@ -2573,19 +2573,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Owner\\.nuget\\packages\\": {}
+    "C:\\Users\\Jose\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Owner\\Documents\\lauchcode\\c#\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
+      "projectUniqueName": "C:\\Users\\Jose\\Desktop\\c#\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
       "projectName": "Purrrfect-Cats",
-      "projectPath": "C:\\Users\\Owner\\Documents\\lauchcode\\c#\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
-      "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Owner\\Documents\\lauchcode\\c#\\2023-Purrrfect-Cats\\Purrrfect-Cats\\obj\\",
+      "projectPath": "C:\\Users\\Jose\\Desktop\\c#\\2023-Purrrfect-Cats\\Purrrfect-Cats\\Purrrfect-Cats.csproj",
+      "packagesPath": "C:\\Users\\Jose\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jose\\Desktop\\c#\\2023-Purrrfect-Cats\\Purrrfect-Cats\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jose\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2659,7 +2659,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
