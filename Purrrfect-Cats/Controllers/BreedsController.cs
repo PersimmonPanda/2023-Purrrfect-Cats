@@ -114,7 +114,7 @@ namespace Purrrfect_Cats.Controllers
             var client = new HttpClient();
             client.DefaultRequestHeaders.Add("x-api-key", "live_F9pFgfTNQsm0mJfBg0FpALoycqilewVeMw8LPpcsmqTZpsydTTRjvhINAQxvTyRE");
 
-            var response = await client.GetAsync("https://api.thecatapi.com/v1/breeds");
+            var response = await client.GetAsync("https://api.thecatapi.com/v1/breeds");//external api restful request 
 
             if (response.IsSuccessStatusCode)
             {
