@@ -23,12 +23,23 @@ body {
     font-family: 'Sigmar', cursive;
     margin-bottom: 60px;
 }
+/*--------------------navagation bar---------------------*/
 .navbar {
+    background-color: rgba(255, 255, 255, 0.9); /* Use an rgba value with alpha less than 1 */
+    backdrop-filter: blur(10px); /* Adds a slight blur effect to the background */
     margin-left: 10%;
     margin-right: 10%;
     padding-right: 4%;
     padding-left: 4%;
 }
+.navbar-nav .nav-link {
+    color: white; /* Change link color */
+    font-size: 18px; /* Change font size */
+}
+
+
+
+
 .HomeBackground {
     margin-top: -17px;
     margin-top: -300px;
@@ -60,25 +71,59 @@ body {
 }
 /*---------------------------------------- Breed Page-------------------------*/
 .Title {
-    background-color: #a3a35a8f;
-    border-radius: 33%;
+    background: linear-gradient(to right, #ffcc00, #ff9900);
+    border-radius: 10px;
     text-align: center;
-    margin-right: 10%;
-    margin-left: 10%;
+    padding: 10px;
 }
-.breedform1 {
-    margin-top:60px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 21px;
+.Title h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Title:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+}
+
+.alert-warning {
+    text-align: center;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto; 
+    max-width: 400px; 
 }
 .form-select {
     text-align: center;
-    
+    padding: 8px; /* Increase padding for better appearance */
+    overflow: hidden; /* Hide overflow for long names */
+    text-overflow: ellipsis; /* Show ellipsis for long names */
+    white-space: nowrap; /* Prevent line breaks for long names */
 }
+.col-md-5 {
+    width: 55.666667%;
+}
+/* Center-align the form elements and the alert */
+.breedform1 {
+    margin-top: 60px;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 21px;
+    max-width: 400px; 
+}
+
+
 .botonOption {
-    text-align:center;
+    text-align: center;
 }
+
+
+.form-select {
+    text-align: center;
+}
+
 .breedImg {
     height: 183px;
     margin-bottom: 50px;
@@ -86,10 +131,35 @@ body {
     margin-top: 10%;
     width: 275px;
 }
+
 .catinfolower {
     margin-left: 20%;
     margin-right: 20%;
 }
-.alert-warning{
-    text-align:center;
+.catInfo {
+    font-size: 18px;
+}
+.catInfoList {
+    background-color: orange; /* Your background color */
+    padding: 10px; /* Add padding to make it visually appealing */
+    border-radius: 5px; /* Optionally, add rounded corners */
+    list-style-type: none; /* Remove default bullet points */
+    margin-left: 0; /* Remove default left margin */
+    padding-left: 20px; /* Add padding to indent content */
+}
+
+    .catInfoList li {
+        margin-bottom: 10px;
+    }
+
+.bg-orange {
+    background-color: orange; /* You can adjust the color as needed */
+    padding: 10px; /* Add padding to make it visually appealing */
+    border-radius: 5px; /* Optionally, add rounded corners */
+}
+
+.catInfoSeparator {
+    border: none;
+    border-top: 2px solid #ccc; /* Adjust the color and thickness as needed */
+    margin: 20px 0; /* Adjust the margin for spacing */
 }

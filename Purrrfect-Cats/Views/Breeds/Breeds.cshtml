@@ -4,91 +4,96 @@
     <div class="Title">
         <h1>Breeds</h1>
     </div>   
-    <div class="container breedform1">
-        <div>
-            <label for="breedId">Select a breed:</label>
+   <div class="container breedform1">
+    <div class="text-center">
+        <label for="breedId">Select a breed:</label>
+    </div>
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-5 col-sm-12 form-group">
+            <select asp-items="@Model.LstBreeds" class="form-select" name="breedId">
+                <option value="Name">Select an option</option>
+            </select>
         </div>
-        <div class="row">
-            <div class="col-5 form-group">       
-                <select asp-items="@Model.LstBreeds" class="form-select" name="breedId">
-                    <option value="Name">select option</option>
-                </select>
-            </div>
-            <div class="col-2">
-                <button type="submit" class="btn btn-primary">Search</button>               
-            </div>   
-            <div>
-                  @if (Model.Breeds == null)
-                {
-                   <div class="alert alert-warning" role="alert">
-                       <p style="color: red;">Please select a cat</p>
-                   </div>
-                    
-                }            
-            </div>
-              
-          
-             
+        <div class="col-md-2 col-sm-12">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+        <div class="col-sm-12 mt-3">
+            @if (Model.Breeds == null)
+            {
+                <div class="alert alert-warning text-center" role="alert">
+                    <p style="color: red;">Please select a cat</p>
+                </div>
+            }
         </div>
     </div>
+</div>
 </form>
 
 
 @if (Model.Breeds != null) {
-    <h1 style="text-align: center;">@Model.SelectedBreed.First().Breeds.First().Name</h1>
     <form asp-controller="FavoriteCats" asp-action="Add" method="post">
         <div class="form-group">
             <div class="container">
-                <div class="row">                 
+                <div class="container mt-4">
+                    <div class="text-center">
+                        <h1>@Model.SelectedBreed.First().Breeds.First().Name</h1>
+                        <p>@Model.SelectedBreed.First().Breeds.First().Description</p>
+                    </div>
+              <div class="row">
                     @foreach (var cat in Model.SelectedBreed)
                     {
-                        <div class="col-4">
-                            <img name="breedImg" class="breedImg" src="@cat.Url"/>              
-                            <div class="text-success">
-                                <hr>
+                        <div class="col-md-4">
+                            <div class="card mb-4 shadow-sm">
+                                <img class="card-img-top breedImg breedImg mx-auto" src="@cat.Url" alt="Cat Image">                              
                             </div>
-                        </div>         
-                    }       
+                        </div>
+                    }
+                </div>
+
                     <input type="hidden" name="catId" value="@Model.Id"/>
                     <input type="hidden" name="breedName" value="@Model.SelectedBreed.First().Breeds.First().Name"/>  
                 </div>
             </div>
         </div>
-        @if (User.Identity.IsAuthenticated)
-            {
-                <div class="botonOption">
-                    <button type="submit" class="btn btn-primary"  name="user" value="@User.Identity.Name">Add To Favorite</button>
-                </div>               
-            }else{
-                <div class="alert alert-warning" role="alert">
-                    Please <a href="/Identity/Account/Login">log in</a> or <a href="/Identity/Account/Register">register</a> to add cats to your favorite list.
-                </div>
-            }
-        <div class="container catInfo">
-            <div>
-                <p >@Model.SelectedBreed.First().Breeds.First().Description</p>
-                <p>Temperament: @Model.SelectedBreed.First().Breeds.First().Temperament</p>
+       @if (User.Identity.IsAuthenticated)
+        {
+            <div class="text-center mt-3"> 
+                <button type="submit" class="btn btn-primary" name="user" value="@User.Identity.Name">Add To Favorite</button>
             </div>
+        }
+        else
+        {
+            <div class="alert alert-warning mt-3" role="alert"> 
+                Please <a href="/Identity/Account/Login">log in</a> or <a href="/Identity/Account/Register">register</a> to add cats to your favorite list.
+            </div>
+        }
+        <hr class="catInfoSeparator">
+        <div class="container catInfo mx-auto">
             <div class="row catinfolower">
-                <div class="col-6">             
-                    <p>Country: @Model.SelectedBreed.First().Breeds.First().Country_codes</p>
-                    <p>Life Span: @Model.SelectedBreed.First().Breeds.First().Life_span</p>
-                    <p>Indoor: @Model.SelectedBreed.First().Breeds.First().Indoor</p>
-                    <p>Adaptability: @Model.SelectedBreed.First().Breeds.First().Adaptability</p>
-                    <p>Affection Level: @Model.SelectedBreed.First().Breeds.First().Affection_level</p>
-                    <p>Child Friendly: @Model.SelectedBreed.First().Breeds.First().Child_friendly</p>
-                    <p>Dog Friendly: @Model.SelectedBreed.First().Breeds.First().Dog_friendly</p>
-                    <p>Energy Level: @Model.SelectedBreed.First().Breeds.First().Energy_level</p>
+                <div class="col-6">     
+                    <ul class="catInfoList bg-orange">
+                        <li>Country: @Model.SelectedBreed.First().Breeds.First().Country_codes</li>
+                        <li>Life Span: @Model.SelectedBreed.First().Breeds.First().Life_span</li>
+                        <li>Indoor: @Model.SelectedBreed.First().Breeds.First().Indoor</li>
+                        <li>Adaptability: @Model.SelectedBreed.First().Breeds.First().Adaptability</li>
+                        <li>Affection Level: @Model.SelectedBreed.First().Breeds.First().Affection_level</li>
+                        <li>Child Friendly: @Model.SelectedBreed.First().Breeds.First().Child_friendly</li>
+                        <li>Dog Friendly: @Model.SelectedBreed.First().Breeds.First().Dog_friendly</li>
+                        <li>Energy Level: @Model.SelectedBreed.First().Breeds.First().Energy_level</li>
+                    </ul>
                 </div>
-                <div class="col-6">               
-                    <p>Grooming: @Model.SelectedBreed.First().Breeds.First().Grooming</p>
-                    <p>Health Issues: @Model.SelectedBreed.First().Breeds.First().Health_issues</p>
-                    <p>Intelligence: @Model.SelectedBreed.First().Breeds.First().Intelligence</p>
-                    <p>Experimental: @Model.SelectedBreed.First().Breeds.First().Experimental</p>
-                    <p>Natural: @Model.SelectedBreed.First().Breeds.First().Natural</p>
-                    <p>Rare: @Model.SelectedBreed.First().Breeds.First().Rare</p>
-                    <p>Rex: @Model.SelectedBreed.First().Breeds.First().Rex</p>
-                    <p>Suppressed: @Model.SelectedBreed.First().Breeds.First().Suppressed_tail</p>   
+                <div class="col-6">      
+                    
+                    <ul class="catInfoList bg-orange">
+                        <li>Grooming: @Model.SelectedBreed.First().Breeds.First().Grooming</li>
+                        <li>Health Issues: @Model.SelectedBreed.First().Breeds.First().Health_issues</li>
+                        <li>Intelligence: @Model.SelectedBreed.First().Breeds.First().Intelligence</li>
+                        <li>Experimental: @Model.SelectedBreed.First().Breeds.First().Experimental</li>
+                        <li>Natural: @Model.SelectedBreed.First().Breeds.First().Natural</li>
+                        <li>Rare: @Model.SelectedBreed.First().Breeds.First().Rare</li>
+                        <li>Rex: @Model.SelectedBreed.First().Breeds.First().Rex</li>
+                        <li>Suppressed: @Model.SelectedBreed.First().Breeds.First().Suppressed_tail</li>  
+                    </ul>                   
                 </div>
             </div>  
         </div>
