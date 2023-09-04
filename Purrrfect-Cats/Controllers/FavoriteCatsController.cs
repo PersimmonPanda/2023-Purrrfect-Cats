@@ -62,7 +62,7 @@ namespace Purrrfect_Cats.Controllers
             if(deletecat == null)
             {
                 return Redirect("FavoriteCats");
-            }
+            }  
             else
             {
                 context.FavoriteCats.Remove(deletecat);

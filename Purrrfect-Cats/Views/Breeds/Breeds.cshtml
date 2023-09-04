@@ -17,12 +17,17 @@
             <div class="col-2">
                 <button type="submit" class="btn btn-primary">Search</button>               
             </div>   
-             <div class="col-2">
-                @if (Model.Breeds == null)
+            <div>
+                  @if (Model.Breeds == null)
                 {
-                    <p style="color: red;">Please select a cat</p>
+                   <div class="alert alert-warning" role="alert">
+                       <p style="color: red;">Please select a cat</p>
+                   </div>
+                    
                 }            
-            </div>   
+            </div>
+              
+          
              
         </div>
     </div>

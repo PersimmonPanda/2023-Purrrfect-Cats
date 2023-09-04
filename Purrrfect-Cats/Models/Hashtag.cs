@@ -21,6 +21,7 @@ namespace Purrrfect_Cats.Models
             FavoriteCats = new List<FavoriteCatsModel>();
         }
 
+       
         public Hashtag()
         {
         }
