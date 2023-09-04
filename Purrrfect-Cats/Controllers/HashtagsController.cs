@@ -81,5 +81,24 @@ namespace Purrrfect_Cats.Controllers
 
             return View(theHashtag);
         }
+        [HttpPost]
+        public IActionResult Delete(int hashid)
+        {
+
+            Hashtag deletechash = context.Hashtags.Find(hashid);
+            if (deletechash == null)
+            {
+                return Redirect("Index");
+            }
+            else
+            {
+                context.Hashtags.Remove(deletechash);
+                context.SaveChanges();
+                return Redirect("Index");
+
+            }
+
+
+        }
     }
 }

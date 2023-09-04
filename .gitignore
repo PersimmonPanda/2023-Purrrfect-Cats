@@ -1,0 +1,19 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/2023-Purrrfect-Cats/FileContentIndex/c83b9945-2609-462e-90eb-345be4957203.vsidx
+/.vs/2023-Purrrfect-Cats/FileContentIndex/read.lock
+/.vs/2023-Purrrfect-Cats/v17/.wsuo
+/Purrrfect-Cats/.vs/Purrrfect-Cats/FileContentIndex/59d2ee94-8b67-4acc-853b-c7a30eadc272.vsidx
+/Purrrfect-Cats/.vs/Purrrfect-Cats/FileContentIndex/59d2ee94-8b67-4acc-853b-c7a30eadc272.vsidx
+/.gitignore
+/Purrrfect-Cats/.vs/Purrrfect-Cats/FileContentIndex/68f8bc73-abf9-48dd-a4aa-084ad140c76c.vsidx
+/Purrrfect-Cats/.vs/Purrrfect-Cats/FileContentIndex/7eac85c2-99d4-4472-b77c-14f41110d9da.vsidx
+/Purrrfect-Cats/.vs/Purrrfect-Cats/FileContentIndex/889d0aa4-409b-4fc3-8043-cf43a9bc85ae.vsidx
+/Purrrfect-Cats/.vs/Purrrfect-Cats/FileContentIndex/ad4cafee-8610-451a-b0f2-c7fc9b8c34cb.vsidx
+/Purrrfect-Cats/.vs/Purrrfect-Cats/FileContentIndex/dc98432d-e56b-46f2-bb3a-b668f429bf74.vsidx
+/Purrrfect-Cats/.vs/Purrrfect-Cats/FileContentIndex/e5f6e83e-d135-4fab-b061-50001a3c4f00.vsidx
+/Purrrfect-Cats/bin/Debug/net6.0/Purrrfect-Cats.exe
+/Purrrfect-Cats/bin/Debug/net6.0/Purrrfect-Cats.staticwebassets.runtime.json
+/Purrrfect-Cats/obj/Debug/net6.0/apphost.exe

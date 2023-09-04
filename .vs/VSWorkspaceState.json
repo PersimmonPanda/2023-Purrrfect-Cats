@@ -4,9 +4,10 @@
     "\\Purrrfect-Cats",
     "\\Purrrfect-Cats\\Controllers",
     "\\Purrrfect-Cats\\Data",
+    "\\Purrrfect-Cats\\Migrations",
     "\\Purrrfect-Cats\\Models",
     "\\Purrrfect-Cats\\Views"
   ],
-  "SelectedNode": "\\Purrrfect-Cats\\Purrrfect-Cats.sln",
+  "SelectedNode": "\\Purrrfect-Cats\\Models\\ListCatsBreedsModel.cs",
   "PreviewInSolutionExplorer": false
 }
