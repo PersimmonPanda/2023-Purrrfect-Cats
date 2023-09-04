@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Purrrfect_Cats
+build_property.RootNamespace = Purrrfect_Cats
+build_property.ProjectDir = C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Owner\Documents\lauchcode\c#\2023-Purrrfect-Cats\Purrrfect-Cats
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Breeds/Breeds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJlZWRzXEJyZWVkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/FavoriteCats/FavoriteCats.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXRzXEZhdm9yaXRlQ2F0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/FavoriteCats/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVDYXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Hashtags/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFzaHRhZ3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Owner/Documents/lauchcode/c\#/2023-Purrrfect-Cats/Purrrfect-Cats/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qvkw89axsm

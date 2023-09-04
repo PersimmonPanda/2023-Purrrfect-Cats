@@ -5,7 +5,8 @@ using Purrrfect_Cats.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = "server=localhost;user=catfinder2023;password=catfinder2023;database=catfinder";
+var connectionString = "server= 7.66.206.135;user=catfinder2023;password=catfinder2023;database=catfinder";
+//var connectionString = "server=localhost ;user=catfinder2023 ;password=catfinder2023;database=catfinder";
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 32));
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString, serverVersion));
