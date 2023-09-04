@@ -1,31 +1,38 @@
 @model List<FavoriteCatsModel>
 
-<div style="text-align:center;">
-    <h1>Favorite Cats</h1>
+<div class="container mt-4">
+    <div class="text-center">
+        <h1>Favorite Cats</h1>
+    </div>
+
+    <div class="text-center">
+        <img src="https://cf.ltkcdn.net/cats/cat-breeds/images/std/325488-800x515-ragdoll-cat-breed.webp" class="img-fluid" alt="Ragdoll Cat">
+    </div>
+
+    @if (Model == null)
+    {
+        <p class="mt-4">You haven't added any cats to your list yet!</p>
+    }
+    else
+    {
+        <form method="post">
+            @foreach (var FavoriteCat in Model)
+            {
+                <div class="text-center mt-3">
+                    <h4>
+                        @FavoriteCat.BreedName
+                        <input class="form-check-input" type="checkbox" value="@FavoriteCat.Id" name="catId">
+                    </h4>
+                </div>
+            }
+            <div class="text-center mt-4">
+                <a class="btn btn-primary" asp-area="" asp-controller="Breeds" asp-action="Breeds">Add A Breed</a>
+                <input type="submit" value="Delete Selected Cats" class="btn btn-danger" asp-controller="FavoriteCats" asp-action="Delete">
+            </div>
+        </form>
+    }
 </div>
 
-<center><img style="height:375px" width="550px" src="https://cf.ltkcdn.net/cats/cat-breeds/images/std/325488-800x515-ragdoll-cat-breed.webp"/></center>
-
-@if (Model == null)
-{
-    <p>You haven't added any cats to your list yet!</p>
-}
-else
-{   
-    <form method="post">
-    @foreach (var FavoriteCat in Model)
-    {
-        <div style="text-align:center">
-            <h4>@FavoriteCat.BreedName  <input class="form-check-input" type="checkbox" value="@FavoriteCat.Id" name="catId"></h4>
-        </div>
-    }
-    <div style="text-align:center">
-        <a class="nav-link text-primary" asp-area="" asp-controller="Breeds" asp-action="Breeds">Add A Breed</a>
-        <input type="submit" value="Delete Selected Cats" class="btn btn-danger text-center"  asp-controller="FavoriteCats" asp-action="Delete">
-    </div>
-</form>
-}
- 
 
     
 
